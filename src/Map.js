@@ -1,11 +1,24 @@
+import Mapbox, { GeolocateControl } from 'react-map-gl'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import news from './news.json'
 
 function Map() {
   return (
-    <div className='app'>
-      {news.map(item => (
-        <div>{item.title}</div>
-      ))}
+    <div>
+      <Mapbox 
+        mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        initialViewState={{
+          longitude: -100,
+          latitude: 40,
+          zoom: 3.5,
+        }}
+        mapStyle='mapbox://styles/mapbox/streets-v11'
+      >
+        <GeolocateControl
+          positionOptions={{enableHighAccuracy: true}}
+          trackUserLocation={true}
+        />
+      </Mapbox>
     </div>
   )
 }
