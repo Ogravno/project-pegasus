@@ -3,12 +3,22 @@
         "articleId": "ijf3jiof",
         "title": "Ungt geni revolusjonerer nyhets opplevelsen",
         "content": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-        "image": "thumbnail.jpeg"
+        "image": "thumbnail.jpeg",
+        "type": "collision",
+        "mapPosition": {
+            "lat": 59.945448,
+            "long": 10.779290
+        }
     },
     {
         "articleId": "dette-er-en-helt-raa-artikkel",
         "title": "Ungt geni revolusjonerer nyhets opplevelsen",
         "content": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-        "image": "thumbnail.jpeg"
+        "image": "thumbnail.jpeg",
+        "type": "news",
+        "mapPosition": {
+            "lat": 59.92,
+            "long": 10.75
+        }
     }
 ]

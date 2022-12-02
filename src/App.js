@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Map from './Map';
 import Article from './Article';
-import news from './news.json';
 import './App.css';
 
 function App() {
